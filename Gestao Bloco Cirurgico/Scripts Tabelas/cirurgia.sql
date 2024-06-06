@@ -1,15 +1,13 @@
-create table percurso.cirurgia (
-id_Cirurgia uuid default gen_random_uuid() not null,
-dho_Solicitacao timestamp null,
-dho_InicioCirurgia timestamp null,
-des_TempoPrevisto varchar(30) null,
-des_TempoInstituicao varchar(30) null,
-dho_FimCirurgia timestamp null,
-dho_Agendamento timestamp null,
-des_nomePaciente varchar(100) null,
-id_Sala uuid not null,
-constraint Cirurgia_pkey primary key (id_Cirurgia)
+CREATE TABLE percurso.cirurgia (
+	id_cirurgia uuid DEFAULT gen_random_uuid() NOT NULL,
+	dho_criacao timestamp NULL,
+	dho_iniciocirurgia timestamp NULL,
+	des_procedimentos varchar(255) NULL,
+	num_cirurgia varchar(30) NULL,
+	dho_fimcirurgia timestamp NULL,
+	des_nomepaciente varchar(100) NULL,
+	id_sala uuid NOT NULL,
+	CONSTRAINT cirurgia_pkey PRIMARY KEY (id_cirurgia)
 );
 
-alter table percurso.Cirurgia add constraint cirurgia_fk1
-foreign key (id_Sala) references percurso.Salas(id_Sala);
+ALTER TABLE percurso.cirurgia ADD CONSTRAINT cirurgia_fk1 FOREIGN KEY (id_sala) REFERENCES percurso.salas(id_sala);
