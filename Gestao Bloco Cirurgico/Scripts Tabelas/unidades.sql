@@ -22,4 +22,16 @@ CREATE TABLE percurso.unidades (
 	CONSTRAINT unidade_pkey PRIMARY KEY (id_unidade)
 );
 
+-- Table Triggers
+
+create trigger atualiza_currentdate_unidade before
+insert
+    or
+update
+    on
+    percurso.unidades for each row execute function percurso.atualiza_dho_ultatualizacao();
+
+
+-- percurso.unidades foreign keys
+
 ALTER TABLE percurso.unidades ADD CONSTRAINT unidades_fk1 FOREIGN KEY (id_empresa) REFERENCES percurso.empresas(id_empresa);
