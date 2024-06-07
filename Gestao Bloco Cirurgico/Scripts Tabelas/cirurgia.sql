@@ -3,7 +3,7 @@ CREATE TABLE percurso.cirurgia (
 	dho_criacao timestamp NULL,
 	dho_inicioprevisto timestamp NULL,
 	des_procedimentos varchar(255) NULL,
-	"Num_cirurgia" varchar(30) NULL,
+	num_cirurgia varchar(30) NULL,
 	dho_fimprevisto timestamp NULL,
 	des_nomepaciente varchar(100) NULL,
 	id_sala uuid NOT NULL,
