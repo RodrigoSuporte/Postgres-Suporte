@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Postgres-Suporte</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.jkiss.dbeaver.DBeaverNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Gestao Bloco Cirurgico/Functions/atualiza_dho_ultatualizacao.sql</name>
+			<type>1</type>
+			<location>//SUPORTESERV03/Arqusuarios/Prd/Sistemas/PercursoAssistencial/Banco de dados/Scripts/Functions/atualiza_dho_ultatualizacao.sql</location>
+		</link>
+		<link>
+			<name>Gestao Bloco Cirurgico/Scripts Tabelas/historicoemergencia.sql</name>
+			<type>1</type>
+			<location>//SUPORTESERV03/Arqusuarios/Prd/Sistemas/PercursoAssistencial/Banco de dados/Scripts/26- historicoemergencia.sql</location>
+		</link>
+		<link>
+			<name>Gestao Bloco Cirurgico/Scripts Tabelas/tipodocumento.sql</name>
+			<type>1</type>
+			<location>//SUPORTESERV03/Arqusuarios/Prd/Sistemas/PercursoAssistencial/Banco de dados/Scripts/tipodocumento.sql</location>
+		</link>
+		<link>
+			<name>Gestao Bloco Cirurgico/Scripts Tabelas/tipoequipamentos.sql</name>
+			<type>1</type>
+			<location>//SUPORTESERV03/Arqusuarios/Prd/Sistemas/PercursoAssistencial/Banco de dados/Alterações/Dia 05-06-2024/tipoequipamentos.sql</location>
+		</link>
+		<link>
+			<name>Gestao Bloco Cirurgico/Scripts Tabelas/tipofarmacos.sql</name>
+			<type>1</type>
+			<location>//SUPORTESERV03/Arqusuarios/Prd/Sistemas/PercursoAssistencial/Banco de dados/Alterações/Dia 05-06-2024/tipofarmacos.sql</location>
+		</link>
+		<link>
+			<name>Gestao Bloco Cirurgico/Scripts Tabelas/tipohemoderivados.sql</name>
+			<type>1</type>
+			<location>//SUPORTESERV03/Arqusuarios/Prd/Sistemas/PercursoAssistencial/Banco de dados/Alterações/Dia 05-06-2024/tipohemoderivados.sql</location>
+		</link>
+		<link>
+			<name>Gestao Bloco Cirurgico/Scripts Tabelas/tipoopmes.sql</name>
+			<type>1</type>
+			<location>//SUPORTESERV03/Arqusuarios/Prd/Sistemas/PercursoAssistencial/Banco de dados/Alterações/Dia 05-06-2024/tipoopmes.sql</location>
+		</link>
+	</linkedResources>
+</projectDescription>
