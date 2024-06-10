@@ -1,9 +1,3 @@
--- percurso.historicochamadas definition
-
--- Drop table
-
--- DROP TABLE percurso.historicochamadas;
-
 CREATE TABLE percurso.historicochamadas (
 	id_registrochamada uuid DEFAULT gen_random_uuid() NOT NULL,
 	dho_chamada timestamp NOT NULL,
@@ -12,11 +6,11 @@ CREATE TABLE percurso.historicochamadas (
 	cod_externo varchar(100) NOT NULL,
 	id_cirurgia uuid NOT NULL,
 	id_modulochamada uuid NOT NULL,
+	id_usuario uuid NOT NULL,
 	CONSTRAINT historicochamadas_pkey PRIMARY KEY (id_registrochamada)
 );
 
 
--- percurso.historicochamadas foreign keys
-
 ALTER TABLE percurso.historicochamadas ADD CONSTRAINT historicochamadas_fk1 FOREIGN KEY (id_cirurgia) REFERENCES percurso.cirurgia(id_cirurgia);
 ALTER TABLE percurso.historicochamadas ADD CONSTRAINT historicochamadas_fk2 FOREIGN KEY (id_modulochamada) REFERENCES percurso.modulochamadas(id_modulochamada);
+ALTER TABLE percurso.historicochamadas ADD CONSTRAINT historicochamadas_usuarios_fk FOREIGN KEY (id_usuario) REFERENCES percurso.usuarios(id_usuario);
