@@ -11,10 +11,9 @@ CREATE TABLE percurso.salas (
 	dho_ultatualizacao timestamp NOT NULL,
 	dho_inativacao timestamp NULL,
 	dho_cadastro timestamp NOT NULL,
+	des_observacao varchar(255) NULL,
 	CONSTRAINT salas_pkey PRIMARY KEY (id_sala)
 );
-
--- Table Triggers
 
 create trigger atualiza_currentdate_sala before
 insert
@@ -23,7 +22,5 @@ update
     on
     percurso.salas for each row execute function percurso.atualiza_dho_ultatualizacao();
 
-
--- percurso.salas foreign keys
 
 ALTER TABLE percurso.salas ADD CONSTRAINT salas_fk1 FOREIGN KEY (id_bloco) REFERENCES percurso.blocos(id_bloco);
