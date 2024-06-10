@@ -11,7 +11,6 @@ CREATE TABLE percurso.blocos (
 	CONSTRAINT blocos_pkey PRIMARY KEY (id_bloco)
 );
 
--- Table Triggers
 
 create trigger atualiza_currentdate_bloco before
 insert
@@ -20,7 +19,5 @@ update
     on
     percurso.blocos for each row execute function percurso.atualiza_dho_ultatualizacao();
 
-
--- percurso.blocos foreign keys
 
 ALTER TABLE percurso.blocos ADD CONSTRAINT blocos_fk1 FOREIGN KEY (id_unidade) REFERENCES percurso.unidades(id_unidade);
