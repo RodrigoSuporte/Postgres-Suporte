@@ -22,8 +22,6 @@ CREATE TABLE percurso.empresas (
 	CONSTRAINT empresas_pkey PRIMARY KEY (id_empresa)
 );
 
--- Table Triggers
-
 create trigger atualiza_currentdate_empresa before
 insert
     or
