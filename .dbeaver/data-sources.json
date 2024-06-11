@@ -50,8 +50,64 @@
 				},
 				"auth-model": "native"
 			}
+		},
+		"postgres-jdbc-19007b96b16-1115cdb4274d0d8e": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "Sys DBA HMG",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://svrdbhmg.ddns.net:5432/postgres",
+				"configurationType": "URL",
+				"home": "postgresql_client",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-chosen-role@": "",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-19007bb74aa-3c91f75dd9a87aea": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "Sys DBA PROD",
+			"save-password": true,
+			"configuration": {
+				"host": "banco-01.cluster-cvn8ia2ttsjj.us-east-1.rds.amazonaws.com",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://banco-01.cluster-cvn8ia2ttsjj.us-east-1.rds.amazonaws.com:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql_client",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
 		}
 	},
+	"virtual-models": {"postgres-jdbc-18fedd91613-baaf05b973f3c86":{"postgres":{"emergencias":{":chamadores":{"description":"des_nome"}}}}},
 	"connection-types": {
 		"dev": {
 			"name": "Desenvolvimento",

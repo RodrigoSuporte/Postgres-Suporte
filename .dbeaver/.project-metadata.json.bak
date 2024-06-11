@@ -1,1 +1,1 @@
-{"resources":{"Gestao Bloco Cirurgico/Functions/atualiza_dho_ultatualizacao.sql":{"default-schema":"percurso","default-datasource":"postgres-jdbc-18feddb51ef-4782192bb3343ebd","default-catalog":"postgres"}}}
+{"resources":{"Gestao Bloco Cirurgico/Functions/atualiza_dho_ultatualizacao.sql":{"default-schema":"percurso","default-datasource":"postgres-jdbc-18feddb51ef-4782192bb3343ebd","default-catalog":"postgres"},"Scripts/Script.sql":{"default-datasource":"postgres-jdbc-18fedd91613-baaf05b973f3c86","default-catalog":"postgres","default-schema":"emergencias"}}}
